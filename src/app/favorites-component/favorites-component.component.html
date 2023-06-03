@@ -1,0 +1,15 @@
+<div class="favorites-container">
+  <h2>Favorites</h2>
+  <div class="movie-cards">
+    <div *ngFor="let movie of favorites" class="movie-card">
+      <h3>{{ movie.title }}</h3>
+      <p>Release Date: {{ movie.releaseDate }}</p>
+      <p>{{ movie.summary }}</p>
+      <div class="button-container">
+        <button class="remove-button" (click)="removeFromFavorites(movie)">
+          Remove
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

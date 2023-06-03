@@ -1,0 +1,9 @@
+<div
+  class="movie-card"
+  *ngFor="let movie of movies"
+  (click)="showMovieDetails(movie)"
+>
+  <h2 class="movie-title">{{ movie.title }}</h2>
+  <p>Release Date: {{ movie.releaseDate }}</p>
+  <p>{{ movie.summary }}</p>
+</div>

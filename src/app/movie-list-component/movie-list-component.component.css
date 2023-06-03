@@ -1,0 +1,22 @@
+.movie-card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.movie-card:hover {
+  background-color: #ebebeb;
+}
+
+.movie-title {
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.movie-title:hover {
+  color: #333;
+}

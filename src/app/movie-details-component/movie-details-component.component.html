@@ -1,0 +1,15 @@
+<div class="movie-details-container" *ngIf="movie">
+  <div class="movie-card">
+    <h2>{{ movie.title }}</h2>
+    <p>Release Date: {{ movie.releaseDate }}</p>
+    <p>Average Rating: {{ movie.averageRating }}</p>
+    <p>{{ movie.summary }}</p>
+    <img *ngIf="movie.posterUrl" [src]="movie.posterUrl" alt="Movie Poster" />
+
+    <div class="button-container">
+      <button class="favorite-button" (click)="toggleFavorite()">
+        {{ isFavorite ? "Remove from Favorites" : "Add to Favorites" }}
+      </button>
+    </div>
+  </div>
+</div>
